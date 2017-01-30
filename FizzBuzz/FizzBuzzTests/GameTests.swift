@@ -28,7 +28,12 @@ class GameTests: XCTestCase {
     func testOnPlayScoreIncremented() {
         _ = game.play(move: "1")
         XCTAssertTrue(game.score == 1)
-        
+    }
+    
+    func testIfMoveWrongScoreNotIncremented() {
+        game.score = 1
+        _ = game.play(move: "Fizz")
+        XCTAssertEqual(game.score, 1)
     }
     
     func testIfMoveIsRight() {
