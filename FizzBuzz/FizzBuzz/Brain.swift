@@ -37,7 +37,7 @@ class Brain: NSObject{
                 return "Buzz"
             }
             else{
-            return "Dan is cool"
+            return "\(number)"
             }
 }
     }
