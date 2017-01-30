@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_5" orientation="portrait">
+    <device id="ipad12_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,29 +20,39 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="haz-4g-OpQ">
-                                <rect key="frame" x="299" y="676" width="99" height="40"/>
+                                <rect key="frame" x="909" y="1306" width="99" height="40"/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
                                 <state key="normal" title="Play Again">
                                     <color key="titleColor" red="1" green="0.60392156862745094" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3/5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j3f-dp-BVJ">
-                                <rect key="frame" x="339" y="27.999999999999996" width="30" height="27.666666666666661"/>
+                                <rect key="frame" x="949" y="28" width="30" height="28"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
                                 <color key="textColor" red="1" green="0.60392156860000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xs1-rk-3RA">
+                                <rect key="frame" x="91" y="482.5" width="881" height="470"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="xs1-rk-3RA" secondAttribute="height" multiplier="15:8" id="L1Z-Au-0xJ"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.24313725490196078" green="0.75686274509803919" blue="0.82745098039215681" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="j3f-dp-BVJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="LGz-6p-VHX"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="haz-4g-OpQ" secondAttribute="bottom" constant="20" id="jTj-m5-4kH"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="j3f-dp-BVJ" secondAttribute="trailing" constant="25" id="pdo-GX-TJX"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="haz-4g-OpQ" secondAttribute="trailing" constant="-4" id="rdC-cT-l0T"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="haz-4g-OpQ" secondAttribute="bottom" constant="20" id="0EQ-Vh-U1Q"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="j3f-dp-BVJ" secondAttribute="trailing" constant="25" id="ERC-19-x29"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="haz-4g-OpQ" secondAttribute="trailing" constant="-4" id="FDN-8n-9Ty"/>
+                            <constraint firstItem="xs1-rk-3RA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="71" id="MEv-Ey-vsE"/>
+                            <constraint firstItem="xs1-rk-3RA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="34.5" id="s1J-nV-FoX"/>
+                            <constraint firstItem="xs1-rk-3RA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="19.5" id="uKK-Wt-CSo"/>
+                            <constraint firstItem="j3f-dp-BVJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="xCL-X3-FMx"/>
                         </constraints>
                     </view>
                 </viewController>
