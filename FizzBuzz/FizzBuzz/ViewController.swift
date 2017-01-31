@@ -48,12 +48,6 @@ class ViewController: UIViewController {
     }
 
     @IBAction func buttonTapped(_ sender: UIButton) {
-        guard let unwrappedScore = gameScore else {
-            print("Game score is nil")
-            return
-        }
-        
-        let nextScore = unwrappedScore + 1
         play(move: Move.Number)
     }
 
