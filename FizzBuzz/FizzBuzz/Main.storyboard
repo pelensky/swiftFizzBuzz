@@ -8,6 +8,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -37,10 +38,55 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xs1-rk-3RA">
-                                <rect key="frame" x="91" y="482.5" width="881" height="470"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="60" y="231" width="904" height="904"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GGK-L7-CZ7">
+                                        <rect key="frame" x="0.0" y="0.0" width="433.5" height="433.5"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="70"/>
+                                        <state key="normal" title="0" backgroundImage="button_border">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zsU-fK-ZKD">
+                                        <rect key="frame" x="470.5" y="0.0" width="433.5" height="433.5"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="70"/>
+                                        <state key="normal" title="0" backgroundImage="button_border">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J3p-Fw-tdn">
+                                        <rect key="frame" x="0.0" y="462.5" width="433.5" height="433.5"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="70"/>
+                                        <state key="normal" title="0" backgroundImage="button_border">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HvN-rb-pNs">
+                                        <rect key="frame" x="470.5" y="462.5" width="433.5" height="433.5"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="70"/>
+                                        <state key="normal" title="0" backgroundImage="button_border">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="xs1-rk-3RA" secondAttribute="height" multiplier="15:8" id="L1Z-Au-0xJ"/>
+                                    <constraint firstItem="GGK-L7-CZ7" firstAttribute="leading" secondItem="xs1-rk-3RA" secondAttribute="leading" id="47U-c1-hvZ"/>
+                                    <constraint firstItem="zsU-fK-ZKD" firstAttribute="height" secondItem="GGK-L7-CZ7" secondAttribute="height" id="8pn-i0-PIn"/>
+                                    <constraint firstItem="J3p-Fw-tdn" firstAttribute="leading" secondItem="xs1-rk-3RA" secondAttribute="leading" id="9Zc-dh-Q18"/>
+                                    <constraint firstItem="HvN-rb-pNs" firstAttribute="height" secondItem="GGK-L7-CZ7" secondAttribute="height" id="DJr-Un-4hV"/>
+                                    <constraint firstAttribute="bottom" secondItem="HvN-rb-pNs" secondAttribute="bottom" constant="8" id="Don-kS-wY2"/>
+                                    <constraint firstAttribute="trailing" secondItem="HvN-rb-pNs" secondAttribute="trailing" id="EtZ-vr-AKT"/>
+                                    <constraint firstItem="GGK-L7-CZ7" firstAttribute="top" secondItem="xs1-rk-3RA" secondAttribute="top" id="F0o-1L-y0i"/>
+                                    <constraint firstAttribute="width" secondItem="xs1-rk-3RA" secondAttribute="height" multiplier="1:1" id="L1Z-Au-0xJ"/>
+                                    <constraint firstItem="GGK-L7-CZ7" firstAttribute="width" secondItem="xs1-rk-3RA" secondAttribute="width" multiplier="0.48" id="LEr-Bo-cri"/>
+                                    <constraint firstItem="GGK-L7-CZ7" firstAttribute="height" secondItem="xs1-rk-3RA" secondAttribute="height" multiplier="0.48" id="NAj-RA-g0b"/>
+                                    <constraint firstAttribute="bottom" secondItem="J3p-Fw-tdn" secondAttribute="bottom" constant="8" id="Nny-cO-wGM"/>
+                                    <constraint firstItem="J3p-Fw-tdn" firstAttribute="height" secondItem="GGK-L7-CZ7" secondAttribute="height" id="Rg2-Xw-WkX"/>
+                                    <constraint firstItem="zsU-fK-ZKD" firstAttribute="top" secondItem="xs1-rk-3RA" secondAttribute="top" id="Uhz-Dc-TBK"/>
+                                    <constraint firstItem="HvN-rb-pNs" firstAttribute="width" secondItem="GGK-L7-CZ7" secondAttribute="width" id="boO-1L-4DG"/>
+                                    <constraint firstItem="zsU-fK-ZKD" firstAttribute="width" secondItem="GGK-L7-CZ7" secondAttribute="width" id="gVy-cD-3ga"/>
+                                    <constraint firstItem="J3p-Fw-tdn" firstAttribute="width" secondItem="GGK-L7-CZ7" secondAttribute="width" id="kTa-JZ-SDd"/>
+                                    <constraint firstAttribute="trailing" secondItem="zsU-fK-ZKD" secondAttribute="trailing" id="to3-aH-RQE"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -49,16 +95,19 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="haz-4g-OpQ" secondAttribute="bottom" constant="20" id="0EQ-Vh-U1Q"/>
                             <constraint firstAttribute="trailingMargin" secondItem="j3f-dp-BVJ" secondAttribute="trailing" constant="25" id="ERC-19-x29"/>
                             <constraint firstAttribute="trailingMargin" secondItem="haz-4g-OpQ" secondAttribute="trailing" constant="-4" id="FDN-8n-9Ty"/>
-                            <constraint firstItem="xs1-rk-3RA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="71" id="MEv-Ey-vsE"/>
-                            <constraint firstItem="xs1-rk-3RA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="34.5" id="s1J-nV-FoX"/>
-                            <constraint firstItem="xs1-rk-3RA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="19.5" id="uKK-Wt-CSo"/>
+                            <constraint firstItem="xs1-rk-3RA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="40" id="MEv-Ey-vsE"/>
+                            <constraint firstItem="xs1-rk-3RA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Rl6-i2-Cdp"/>
+                            <constraint firstItem="xs1-rk-3RA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="eAq-hD-nIL"/>
                             <constraint firstItem="j3f-dp-BVJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="xCL-X3-FMx"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="36" y="37.331334332833585"/>
+            <point key="canvasLocation" x="34.782608695652179" y="36.684782608695656"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="button_border" width="400" height="400"/>
+    </resources>
 </document>

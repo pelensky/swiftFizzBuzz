@@ -16,7 +16,7 @@
 		370EEF061E3F7F68003E46A9 /* Brain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370EEF051E3F7F68003E46A9 /* Brain.swift */; };
 		377F311C1E3F8F6800C9BB49 /* GameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377F311B1E3F8F6800C9BB49 /* GameTests.swift */; };
 		377F311E1E3F93BC00C9BB49 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377F311D1E3F93BC00C9BB49 /* Game.swift */; };
-		377F31201E3FA31C00C9BB49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 377F311F1E3FA31C00C9BB49 /* Main.storyboard */; };
+		377F31221E3FA92500C9BB49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 377F31211E3FA92500C9BB49 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +52,7 @@
 		370EEF051E3F7F68003E46A9 /* Brain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Brain.swift; sourceTree = "<group>"; };
 		377F311B1E3F8F6800C9BB49 /* GameTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameTests.swift; sourceTree = "<group>"; };
 		377F311D1E3F93BC00C9BB49 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
-		377F311F1E3FA31C00C9BB49 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		377F31211E3FA92500C9BB49 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,11 +104,11 @@
 			isa = PBXGroup;
 			children = (
 				370EEED31E3F7C63003E46A9 /* AppDelegate.swift */,
-				377F311F1E3FA31C00C9BB49 /* Main.storyboard */,
 				370EEED51E3F7C63003E46A9 /* ViewController.swift */,
 				370EEEDA1E3F7C63003E46A9 /* Assets.xcassets */,
 				370EEEDC1E3F7C63003E46A9 /* LaunchScreen.storyboard */,
 				370EEEDF1E3F7C63003E46A9 /* Info.plist */,
+				377F31211E3FA92500C9BB49 /* Main.storyboard */,
 				370EEF051E3F7F68003E46A9 /* Brain.swift */,
 				377F311D1E3F93BC00C9BB49 /* Game.swift */,
 			);
@@ -245,7 +245,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				377F31201E3FA31C00C9BB49 /* Main.storyboard in Resources */,
+				377F31221E3FA92500C9BB49 /* Main.storyboard in Resources */,
 				370EEEDE1E3F7C63003E46A9 /* LaunchScreen.storyboard in Resources */,
 				370EEEDB1E3F7C63003E46A9 /* Assets.xcassets in Resources */,
 			);
