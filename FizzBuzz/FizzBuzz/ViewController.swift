@@ -11,11 +11,27 @@ import UIKit
 class ViewController: UIViewController {
     
     var game : Game?
-    var gameScore: Int?
+    var gameScore: Int? {
+        didSet {
+            guard let unwrappedScore = gameScore else {
+                print("gameScore is nil")
+                return
+            }
+            numberButton.setTitle("\(unwrappedScore)", for: .normal)
+        }
+    }
+    
+    @IBOutlet weak var numberButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         game = Game()
+        
+        guard let checkedGame = game else {
+            print("Game is nil")
+            return
+        }
+        gameScore = checkedGame.score
     }
 
     override func didReceiveMemoryWarning() {
@@ -31,6 +47,16 @@ class ViewController: UIViewController {
         gameScore = response.score
     }
 
+    @IBAction func buttonTapped(_ sender: UIButton) {
+        guard let unwrappedScore = gameScore else {
+            print("Game score is nil")
+            return
+        }
+        
+        let nextScore = unwrappedScore + 1
+        play(move: "\(nextScore)")
+    }
 
+    
 }
 
